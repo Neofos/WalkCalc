@@ -1,0 +1,77 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\cutie-run.gif" />
+    <None Remove="assets\duck-waddling.gif" />
+    <None Remove="assets\explore-map.gif" />
+    <None Remove="assets\quby-cute.gif" />
+    <None Remove="assets\quby-run.gif" />
+    <None Remove="assets\soft-meme.gif" />
+    <None Remove="assets\thinking-rotate.gif" />
+    <None Remove="icon.ico" />
+    <None Remove="quby-cute.gif" />
+    <None Remove="tutoriel\pic1.png" />
+    <None Remove="tutoriel\pic2.png" />
+    <None Remove="tutoriel\pic3.png" />
+    <None Remove="tutoriel\pic4.png" />
+    <None Remove="tutoriel\pic5.png" />
+    <None Remove="tutoriel\pic6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\cutie-run.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\duck-waddling.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\explore-map.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\quby-cute.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\quby-run.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\soft-meme.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\thinking-rotate.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="tutoriel\pic1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="tutoriel\pic2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="tutoriel\pic3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="tutoriel\pic4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="tutoriel\pic5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="tutoriel\pic6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <EmbeddedResource Include="icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XamlAnimatedGif" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>

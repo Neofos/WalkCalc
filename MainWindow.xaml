@@ -1,0 +1,165 @@
+﻿<Window x:Class="WalkCalc.MainWindow" ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WalkCalc"
+        mc:Ignorable="d"
+        Title="WalkCalc" Height="729" Width="489" WindowStartupLocation="CenterScreen" WindowState="Normal"
+        xmlns:gif ="https://github.com/XamlAnimatedGif/XamlAnimatedGif">
+    <Grid Margin="0,-347,-87,-248">
+        <Button IsTabStop="False" x:Name="Button_Walk_Calm" Margin="176,364,263,678" BorderBrush="#00066CC1" Cursor="Hand" Background="#00DDDDDD" Click="Button_Speed_Click" Height="234.04">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="Black" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <StackPanel>
+                <Image gif:AnimationBehavior.SourceUri="/assets/duck-waddling.gif" Height="100" Width="100"/>
+                <RadioButton x:Name="Radio_Walk_Calm" GroupName="SpeedRadios" FontFamily="Gabriola" FontWeight="Bold" FontStyle="Normal" VerticalContentAlignment="Center" FontSize="24" Width="14" Height="17" Margin="0,4,0,0" Focusable="False"/>
+                <TextBlock LineStackingStrategy="BlockLineHeight" LineHeight="20" Text="5.2 км/ч - спокойный шаг" Width="110" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="Gabriola" FontSize="20" FontWeight="Bold" Height="63" Margin="0,4,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button IsTabStop="False" x:Name="Button_Walk_Fast" Margin="327,364,112,678" BorderBrush="#00066CC1" Cursor="Hand" Background="#00DDDDDD" Click="Button_Speed_Click" Height="234.04">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="Black" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <StackPanel>
+                <Image gif:AnimationBehavior.SourceUri="/assets/soft-meme.gif" Height="100" Width="100"/>
+                <RadioButton x:Name="Radio_Walk_Fast" GroupName="SpeedRadios" FontFamily="Gabriola" FontWeight="Bold" FontStyle="Normal" VerticalContentAlignment="Center" FontSize="24" Width="14" Height="17" Margin="0,4,0,0" Focusable="False"/>
+                <TextBlock LineStackingStrategy="BlockLineHeight" LineHeight="20" Text="6.5 км/ч - быстрый шаг" Width="110" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="Gabriola" FontSize="20" FontWeight="Bold" Height="63" Margin="0,4,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button IsTabStop="False" x:Name="Button_Run_Calm" Margin="23,588,416,453" BorderBrush="#00066CC1" Cursor="Hand" Background="#00DDDDDD" Click="Button_Speed_Click" Height="234.04">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="Black" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <StackPanel>
+                <Image gif:AnimationBehavior.SourceUri="/assets/cutie-run.gif" Height="100" Width="100"/>
+                <RadioButton x:Name="Radio_Run_Calm" GroupName="SpeedRadios" FontFamily="Gabriola" FontWeight="Bold" FontStyle="Normal" VerticalContentAlignment="Center" FontSize="24" Width="14" Height="17" Margin="0,4,0,0" Focusable="False"/>
+                <TextBlock LineStackingStrategy="BlockLineHeight" LineHeight="20" Text="10 км/ч - спокойный бег" Width="110" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="Gabriola" FontSize="20" FontWeight="Bold" Height="63" Margin="0,4,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button IsTabStop="False" x:Name="Button_Run_Fast" Margin="176,588,263,453" BorderBrush="#00066CC1" Cursor="Hand" Background="#00DDDDDD" Click="Button_Speed_Click" Height="234.04">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="Black" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <StackPanel>
+                <Image gif:AnimationBehavior.SourceUri="/assets/quby-run.gif" Height="100" Width="100"/>
+                <RadioButton x:Name="Radio_Run_Fast" GroupName="SpeedRadios" FontFamily="Gabriola" FontWeight="Bold" FontStyle="Normal" VerticalContentAlignment="Center" FontSize="24" Width="14" Height="17" Margin="0,4,0,0" Focusable="False"/>
+                <TextBlock LineStackingStrategy="BlockLineHeight" LineHeight="20" Text="15 км/ч - быстрый бег" Width="110" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="Gabriola" FontSize="20" FontWeight="Bold" Height="63" Margin="0,4,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button IsTabStop="False" x:Name="Button_Speed_Custom" Margin="327,590,112,431" BorderBrush="#00066CC1" Cursor="Hand" Background="#00DDDDDD" Click="Button_Speed_Click" Height="254.04">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="Black" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <StackPanel VerticalAlignment="Top" Height="210">
+                <Image gif:AnimationBehavior.SourceUri="/assets/thinking-rotate.gif" Height="100" Width="100"/>
+                <RadioButton x:Name="Radio_Speed_Custom" GroupName="SpeedRadios" FontFamily="Gabriola" FontWeight="Bold" FontStyle="Normal" VerticalContentAlignment="Center" FontSize="24" Width="14" Height="17" Margin="0,4,0,0" Focusable="False" Unchecked="Radio_Speed_Custom_Unchecked"/>
+                <TextBlock LineStackingStrategy="BlockLineHeight" LineHeight="20" Text="Собственное значение (км/ч)" Width="110" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="Gabriola" FontSize="20" FontWeight="Bold" Height="41" Margin="0,4,0,0"/>
+                <TextBox x:Name="Custom_Speed_Box" TextWrapping="WrapWithOverflow" TextAlignment="Center" VerticalContentAlignment="Center" FontFamily="Gabriola" FontSize="30" FontWeight="Bold" Width="94" IsEnabled="False" Height="32" Padding="0,-11,0,0" MaxLength="6" MaxLines="1" KeyDown="Box_KeyDown" LostFocus="Custom_Speed_Box_LostFocus">
+                    <TextBox.Style>
+                        <Style TargetType="{x:Type TextBox}">
+                            <Style.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Background" Value="#FFDEDBDB" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+
+                    </TextBox.Style>
+                </TextBox>
+            </StackPanel>
+        </Button>
+        <Button IsTabStop="False" x:Name="Button_Walk_Slow" Margin="23,364,416,678" BorderBrush="#00066CC1" Cursor="Hand" Background="#00DDDDDD" Click="Button_Speed_Click" Height="234.04">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="Black" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <StackPanel>
+                <Image gif:AnimationBehavior.SourceUri="/assets/quby-cute.gif" Height="100" Width="100"/>
+                <RadioButton x:Name="Radio_Walk_Slow" GroupName="SpeedRadios" FontFamily="Gabriola" FontWeight="Bold" FontStyle="Normal" VerticalContentAlignment="Center" FontSize="24" Width="14" Height="17" Margin="0,4,0,0" Focusable="False"/>
+                <TextBlock LineStackingStrategy="BlockLineHeight" LineHeight="20" Text="3.8 км/ч - медленный шаг" Width="110" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="Gabriola" FontSize="20" FontWeight="Bold" Height="63" Margin="0,4,0,0"/>
+            </StackPanel>
+        </Button>
+        <Image gif:AnimationBehavior.SourceUri="/assets/explore-map.gif" Margin="33,832,439,372"/>
+        <TextBlock LineStackingStrategy="BlockLineHeight" LineHeight="20" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Расстояние (км)" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="Gabriola" FontSize="20" FontWeight="Bold" Margin="151,852,0,0"/>
+        <TextBox IsTabStop="False" x:Name="Distance_Box" TextWrapping="WrapWithOverflow" TextAlignment="Center" VerticalContentAlignment="Center" FontFamily="Gabriola" FontSize="30" FontWeight="Bold" Padding="0,-11,0,0" MaxLength="6" MaxLines="1" Margin="162,875,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92" Height="32" KeyDown="Box_KeyDown"/>
+        <Button x:Name="Button_Calc" IsTabStop="False" FontFamily="Gabriola" Content="Рассчитать" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" Margin="320,859,0,0" VerticalAlignment="Top" Height="45" Width="124" BorderBrush="#7F000000" Padding="1,1,1,1" Click="Button_Calc_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0800B2" Offset="1"/>
+                    <GradientStop Color="#FFC8EAF1"/>
+                    <GradientStop Color="#FFA39FFF" Offset="0.984"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Resul" HorizontalAlignment="Left" Margin="30,929,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontSize="25" FontWeight="Bold" Height="44" Padding="5,-4,5,6" Background="#00DC2626" Foreground="#FFFF1212"/>
+        <Label x:Name="THE_RESULT" HorizontalAlignment="Left" Margin="176,929,0,0" VerticalAlignment="Top" FontFamily="Cambria" FontSize="25" FontWeight="Bold" Height="44" Padding="5,-4,5,6" Background="#00DC2626" Foreground="#FFFF1212" Width="276"/>
+        <CheckBox Name="Divider" Content="Не разделять разряды" HorizontalAlignment="Left" Margin="10,1006,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" TextDecorations="Underline" Margin="340,1005,0,0" Text="ОБ ИСПОЛЬЗОВАНИИ" TextWrapping="Wrap" VerticalAlignment="Top" Cursor="Hand" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="#FF3788FD"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="Red"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>
+</Window>

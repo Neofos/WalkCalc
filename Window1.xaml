@@ -1,0 +1,36 @@
+﻿<Window x:Name="HOW_TO_USE" x:Class="WalkCalc.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WalkCalc"
+        mc:Ignorable="d"
+        Title="HOW TO USE" Height="679" Width="543" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Margin="10, 10, 10, 10">
+                <TextBlock FontFamily="Cambria" FontSize="20" FontWeight="Bold" TextAlignment="Center" TextWrapping="WrapWithOverflow">
+                    <Run Text="Добро пожаловать на страницу обучения использования программы &quot;WalkCalc&quot;! Без лишних предисловий, начнём."/>
+                </TextBlock>
+                <Image Source="/tutoriel/pic1.png" Height="364" Width="422"></Image>
+                <TextBlock FontFamily="Cambria" FontSize="20" FontWeight="Bold" TextAlignment="Center" TextWrapping="WrapWithOverflow">
+                    <Run Text="Для начала необходимо либо выбрать одну из предоставленных скоростей, либо нажать на область &quot;Собственное значение (км/ч)&quot; и ввести нужное вам значение в километрах в час в разблокированное поле."/>
+                </TextBlock>
+                <Image Source="/tutoriel/pic2.png" Height="99" Width="458"></Image>
+                <TextBlock FontFamily="Cambria" FontSize="20" FontWeight="Bold" TextAlignment="Center" TextWrapping="WrapWithOverflow">
+                    <Run Text="Затем необходимо ввести расстояние в километрах, которое вы собираетесь пройти, в поле &quot;Расстояние (км)&quot; и после этого нажать на кнопку &quot;Рассчитать&quot;."/>
+                </TextBlock>
+                <Image Source="/tutoriel/pic3.png" Height="46" Width="272"></Image>
+                <TextBlock FontFamily="Cambria" FontSize="20" FontWeight="Bold" TextAlignment="Center" TextWrapping="WrapWithOverflow">
+                    <Run Text="Но что же делает эта галочка? По умолчанию программа разделяет разряды часов и минут для удобства пользователя. Если это не нужно, то вы должны отметить эту галочку, и тогда время предстанет в виде часов с дробной частью. Сравните:"/>
+                </TextBlock>
+                <Image Source="/tutoriel/pic5.png" Height="132" Width="404"></Image>
+                <Image Source="/tutoriel/pic6.png" Height="132" Width="404"></Image>
+                <TextBlock FontFamily="Cambria" FontSize="20" FontWeight="Bold" TextAlignment="Center" TextWrapping="WrapWithOverflow">
+                    <Run Text="Ну а через эту ссылку вы попали сюда! Удачи!"/>
+                </TextBlock>
+                <Image Source="/tutoriel/pic4.png" Height="41" Width="186"></Image>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
