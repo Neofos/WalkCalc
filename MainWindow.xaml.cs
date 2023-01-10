@@ -14,7 +14,7 @@ namespace WalkCalc
         /// Конструктор программы, инициализирующий все компоненты
         /// </summary>
         public MainWindow() => InitializeComponent();
-
+        
         private double _speed = double.NaN;
 
         /// <summary>
